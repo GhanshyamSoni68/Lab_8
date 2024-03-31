@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ h1{
+    padding: 26px 130px;
+    font-size: 5rem;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    background-color: #a6c4e0;
+}
+
+/* Header styles */
+.head {
+    background-color: #869dc7;
+    color: #00005d;
+    font-size: 150%;
+    padding: 10px 10px 10px 20px;
+    background-image: url("../images/lighthouselogo.jpg");
+    background-repeat: no-repeat;
+    height: 130px;
+}
+
+/* Navigation styles */
+.navbar {
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    background-color: pink;
+    /* padding: 20px 33px; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+}
+
+.navul {
+    list-style: none;
+}
+
+.navul li {
+    border-bottom: 2px white solid;
+    padding: 20px 33px; 
+}
+
+.navul li a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+#mainimg {
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+main {
+    background-color: white;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+h2 {
+    color: lightblue;
+}
+
+.d-flex{
+    display: grid;
+    grid-template-columns: 65% 35%;
+
+}
+.para{
+    margin: 10px 5px;
+}
+/* Footer styles */
+footer {
+    background-color: #869dc7;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 12px 0;
+}
+
+
+/* Tablet view styling */
+@media (min-width: 501px) and (max-width: 800px) {
+    .navul {
+        padding: 10px 22px;
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr);
+    }
+    nav{
+        background-color: lightblue;
+    }
+    .navbar {
+        display: grid;
+        width: 100%;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        padding: 0px;
+    }
+    nav ul li {
+        background-color: pink;
+        padding: 15px 25px;
+        margin: 5px 15px ;
+        text-align: left;
+        border-bottom: 2px white solid;
+    }
+    .d-flex {
+        display: grid;
+        grid-template-columns: 65% 35%;   
+    }
+    .para {
+        background-color: #ffffff; /* Example background color for text divs */
+        padding: 20px; /* Example padding */
+    }
+    
+    .imagediv {
+        text-align: center; /* Center the image horizontally */
+    }
+
+}
+/* Mobile view styling */
+@media (max-width: 500px) {
+    .navul {
+        padding: 0;
+    }
+    .navbar {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        padding: 0px;
+    }
+    nav ul li {
+        background-color: #8383fe;;
+        
+        padding: 0px;
+        text-align: left;
+        border-bottom: 2px white solid;
+    }
+    .d-flex {
+        display: grid; 
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 1fr; 
+        
+    }
+    header h1 {
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+    .head {
+        background-color: #869dc7;
+        color: #00005d;
+        padding: 10px 10px 10px 20px;
+        background-image: url(../images/lighthouselogo.jpg);
+        background-repeat: no-repeat;
+        height: 130px;
+    }
+    .para{
+        margin: 15px 5px;
+    }
+}
